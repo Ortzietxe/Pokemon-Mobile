@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZonaLideres">
+
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lideres" />
+
+    <Button
+        android:id="@+id/irAvenida2"
+        android:layout_width="410dp"
+        android:layout_height="170dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="irAvenida"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/combatirBrock"
+        android:layout_width="103dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="348dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="combatirBrock"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/combatirMaestra"
+        android:layout_width="89dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="344dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="combatirMaestra"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/combatirMisty"
+        android:layout_width="84dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="356dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="combatirMisty"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/combatirBrendan"
+        android:layout_width="84dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="336dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="combatirBrendan"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/brock"
+        android:layout_width="220dp"
+        android:layout_height="423dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/brock" />
+
+    <ImageView
+        android:id="@+id/maestra"
+        android:layout_width="220dp"
+        android:layout_height="423dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maestra" />
+
+    <ImageView
+        android:id="@+id/brendan"
+        android:layout_width="220dp"
+        android:layout_height="423dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/brendan" />
+
+    <ImageView
+        android:id="@+id/misty"
+        android:layout_width="220dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="244dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaminoPueblo">
+
+    <Button
+        android:id="@+id/irCaminoPueblo"
+        android:layout_width="194dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="216dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="irPueblo"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/irAvenida"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <Button
+        android:id="@+id/irAvenida"
+        android:layout_width="410dp"
+        android:layout_height="238dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="irAvenida"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/irSupervivencia"
+        android:layout_width="192dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="64dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="irSupervivencia"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/irAvenida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camino_pueblo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

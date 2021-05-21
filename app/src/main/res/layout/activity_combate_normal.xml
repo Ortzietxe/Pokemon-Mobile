@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CombateNormal"
+    android:background="#F8F8F8">
+
+    <TextView
+        android:id="@+id/vidasRestantesRival"
+        android:layout_width="40dp"
+        android:layout_height="53dp"
+        android:text="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <TextView
+        android:id="@+id/vidasTotalesRival"
+        android:layout_width="40dp"
+        android:layout_height="53dp"
+        android:text="/3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/vidasRestantesRival"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <ImageView
+        android:id="@+id/huir"
+        android:layout_width="92dp"
+        android:layout_height="87dp"
+        android:onClick="huir"
+        app:layout_constraintBottom_toTopOf="@+id/campo_aliado2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/huir" />
+
+    <ImageView
+        android:id="@+id/piedra"
+        android:layout_width="134dp"
+        android:layout_height="136dp"
+        android:onClick="piedra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/piedra" />
+
+    <ImageView
+        android:id="@+id/papel"
+        android:layout_width="134dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:onClick="papel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tijera"
+        app:layout_constraintStart_toEndOf="@+id/piedra"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/tijera"
+        android:layout_width="134dp"
+        android:layout_height="136dp"
+        android:onClick="tijera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tijera" />
+
+    <ImageView
+        android:id="@+id/campo_aliado"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657"
+        app:srcCompat="@drawable/campo" />
+
+    <ImageView
+        android:id="@+id/campo_aliado2"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265"
+        app:srcCompat="@drawable/campo" />
+
+    <ImageView
+        android:id="@+id/pokemonAliado"
+        android:layout_width="189dp"
+        android:layout_height="258dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <ImageView
+        android:id="@+id/pokemonRival"
+        android:layout_width="189dp"
+        android:layout_height="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/vidasTotalesAliado"
+        android:layout_width="40dp"
+        android:layout_height="53dp"
+        android:text="/3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/vidasRestantesAliado"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <TextView
+        android:id="@+id/vidasRestantesAliado"
+        android:layout_width="40dp"
+        android:layout_height="53dp"
+        android:text="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/campo_aliado"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

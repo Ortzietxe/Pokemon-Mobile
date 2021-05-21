@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pokemonmobile">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PokemonMobile">
+        <activity android:name=".SeleccionSupervivencia"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:supportsRtl="true"/>
+        <activity android:name=".FinalSupervivencia1" />
+        <activity android:name=".ElegirInicial" />
+        <activity android:name=".Supervivencia1" />
+        <activity android:name=".CaminoPueblo" />
+        <activity android:name=".Historial" />
+        <activity android:name=".ListaPokemon" />
+        <activity android:name=".Conversacion"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:supportsRtl="true"/>
+        <activity android:name=".ZonaLideres" />
+        <activity android:name=".ZonaCombates" />
+        <activity android:name=".Avenida" />
+        <activity android:name=".Plaza" />
+        <activity android:name=".CombateNormal" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

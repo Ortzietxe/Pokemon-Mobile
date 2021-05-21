@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Plaza">
+
+    <Button
+        android:id="@+id/irAvenida"
+        android:layout_width="88dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="320dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="irAvenida"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/mostrarEquipo"
+        android:layout_width="88dp"
+        android:layout_height="121dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="verPkmn"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/verHistorial"
+        android:layout_width="93dp"
+        android:layout_height="169dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="verHistorial"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <Button
+        android:id="@+id/reclutarAmigos"
+        android:layout_width="150dp"
+        android:layout_height="226dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:onClick="irZonaReclutamiento"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="1"
+        android:background="#00FFFFFF"
+        android:color="#00FF0000"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plaza" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
